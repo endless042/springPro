@@ -7,11 +7,11 @@ public class MavenBuildRunner implements BuildRunner {
 
 	@Override
 	public void build(List<String> srcDirs, String binDir) {
-		String info = "¸ŞÀÌºì °æ·Î: "+ mavenPath + "\n";
+		String info = "ë©”ì´ë¸ ê²½ë¡œ: "+ mavenPath + "\n";
 		for (String srcDir : srcDirs)
-			info += "¼Ò½º °æ·Î: " + srcDir + "\n";
-			info += "Å¬·¡½º ÆÄÀÏ °æ·Î: " + binDir + "\n";
-			System.out.printf("MavenBuildRunner.build() ½ÇÇà\n%s", info);
+			info += "ì†ŒìŠ¤ ê²½ë¡œ: " + srcDir + "\n";
+			info += "í´ë˜ìŠ¤íŒŒì¼ ê²½ë¡œ: " + binDir + "\n";
+			System.out.printf("MavenBuildRunner.build() ì‹¤í–‰\n%s", info);
 	}
 
 	public void setMavenPath(String mavenPath) {
